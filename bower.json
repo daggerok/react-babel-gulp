@@ -1,0 +1,35 @@
+{
+  "name": "react-babel-gulp",
+  "description": "react gulp bower browserify babel babrlify es6 bootstrap",
+  "main": "src/main.js",
+  "authors": [
+    "Maksim Kostromin"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "gulp",
+    "bower",
+    "browserify",
+    "babel",
+    "babrlify",
+    "es6",
+    "jquery",
+    "bootstrap"
+  ],
+  "homepage": "https://github.com/daggerok/react-babel-gulp",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
