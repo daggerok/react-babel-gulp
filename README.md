@@ -32,5 +32,7 @@ $ npm start
 *run following command for fix:*
 
 ```shell
-$ chown root:root /usr/bin/sudo && chmod 4755 /usr/bin/sudo
+$ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+fs.inotify.max_user_watches=524288
+fs.inotify.max_user_watches = 524288
 ```
