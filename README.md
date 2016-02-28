@@ -1,7 +1,7 @@
 react-babel-gulp [![build](https://travis-ci.org/daggerok/react-babel-gulp.svg?branch=master)](https://travis-ci.org/daggerok/react-babel-gulp)
 ==========
 
-quit boilerplate with simple example using: react, gulp, bower, browserify, babel, babrlify, es6, jquery, bootstrap
+quit boilerplate with simple example using: gulp-babel, es6, bower, react, browserify, babrlify, jquery, bootstrap, local-web-server and gulp-livereload 
 
 ```shell
 npm start
