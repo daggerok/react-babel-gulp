@@ -1,3 +1,3 @@
 import {gulp} from './common.babel'
 
-gulp.task('default', ['js', 'css', 'html'])
+gulp.task('default', ['jsx', 'css', 'html'])

@@ -1,44 +1,36 @@
 {
   "name": "react-babel-gulp",
   "version": "1.0.0",
-  "description": "react gulp bower browserify babel babrlify es6 jquery bootstrap",
+  "description": "gulp-babel react browserify babrlify es6 bower jquery bootstrap local-web-server gulp-livereload",
   "author": "Maksim Kostromin",
-  "main": "src/main.js",
-  "babel": {
-    "presets": [
-      "es2015",
-      "react"
+  "main": "src/main.jsx",
+  "local-web-server": {
+    "port": 3000,
+    "forbid": [
+      "*.json",
+      "*.ts",
+      "*.md",
+      "*.yml",
+      "*.babel.js",
+      ".gitignore"
     ],
-    "plugins": [
-      "transform-runtime",
-      "react-html-attrs",
-      "transform-class-properties",
-      "transform-decorators-legacy"
-    ]
+    "no-cache": true
   },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015",
-            "react"
-          ]
-        }
-      ]
-    ]
+  "babel": {
+    "presets": ["es2015"]
   },
   "config": {
     "bower_directory": "src/vendors"
   },
   "scripts": {
-    "bower": "bower",
-    "postinstall": "bower install -p",
-    "rm": "rm -fr dist",
     "gulp": "gulp",
-    "start": "gulp watch",
-    "prestart": "npm install"
+    "bower": "bower",
+    "pregulp": "npm i",
+    "rm": "rm -fr dist",
+    "test": "npm run gulp",
+    "prestart": "npm test",
+    "start": "gulp watch & ws -d dist",
+    "postinstall": "bower install -p"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
@@ -56,7 +48,8 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
-    "gulp-connect": "^2.3.1",
+    "gulp-livereload": "^3.8.1",
+    "local-web-server": "^1.1.1",
     "gulp-sourcemaps": "^1.6.0",
     "jquery": "^2.2.1",
     "react": "^0.14.7",
@@ -71,15 +64,16 @@
     "url": "git+https://github.com/daggerok/react-babel-gulp.git"
   },
   "keywords": [
-    "react",
-    "gulp",
-    "bower",
-    "browserify",
-    "babel",
-    "babrlify",
+    "gulp-babel",
     "es6",
+    "bower",
+    "react",
+    "browserify",
+    "babrlify",
     "jquery",
-    "bootstrap"
+    "bootstrap",
+    "local-web-server",
+    "gulp-livereload"
   ],
   "bugs": {
     "url": "https://github.com/daggerok/react-babel-gulp/issues"

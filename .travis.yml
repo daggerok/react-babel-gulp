@@ -3,5 +3,4 @@ node_js: 5
 cache:
   directories:
     - node_modules
-script:
-  - npm run gulp
+script: npm test

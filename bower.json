@@ -1,6 +1,6 @@
 {
   "name": "react-babel-gulp",
-  "description": "react gulp bower browserify babel babrlify es6 bootstrap",
+  "description": "react gulp bower browserify babel babrlify es6 bootstrap local-web-server, gulp-livereload",
   "main": "src/main.js",
   "authors": [
     "Maksim Kostromin"
