@@ -30,7 +30,7 @@
     "test": "npm run gulp",
     "prestart": "npm test",
     "start": "gulp watch & ws -d dist",
-    "postinstall": "bower install -p"
+    "postinstall": "bower install -p --config.interactive=false"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
